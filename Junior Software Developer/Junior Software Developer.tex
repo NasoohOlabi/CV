@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.6.4, 13 Nov 2021) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{39936f}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num}
+
+
+\begin{document}
+\name{Nasouh AlOlabi}
+\tagline{Junior Software Developer}
+
+\photoR{2.5cm}{profile}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+   % Not all of these are required!
+   % You can add your own with \printinfo{symbol}{detail}
+   \email{nasooholabi@gmail.com}
+   \phone{09448 00 963}
+   % \mailaddress{Damascus, Dumar, sec 16}
+   \location{Dumar, Damascus}
+   % \homepage{marissamayr.tumblr.com}
+   % \twitter{@marissamayer}
+   \linkedin{linkedin.com/in/nasooh-olabi/}
+   \github{github.com/NasoohOlabi/} % I'm just making this up though.
+   %   \orcid{0000-0000-0000-0000} % Obviously making this up too.
+   %% You can add your own arbitrary detail with
+   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+   % \printinfo{\faPaw}{Hey ho!}
+   %% Or you can declare your own field with
+   %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+   % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+   % \gitlab{your_id}
+   %%
+   %% For services and platforms like Mastodon where there isn't a
+   %% straightforward relation between the user ID/nickname and the hyperlink,
+   %% you can use \printinfo directly e.g.
+   % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+   %% But if you absolutely want to create new dedicated info fields for
+   %% such platforms, then use \NewInfoField* with a star:
+   % \NewInfoField*{mastodon}{\faMastodon}
+   %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+   %% the full hyperlink.
+   % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+   \cvsection{Courses \& Training}
+
+   \cvevent{Odoo Framework \& ERP}{EBTECH}{Febuary 2022 -- April 2022}{}
+   \begin{itemize}
+      \item Use Odoo Sales, Accounting, Inventory, CRM modules.
+      \item Create and maintain an Odoo ERP module.
+      \item Take full advantage of the Odoo ORM Layer and its features.
+      \item Build User Friendly UI using Odoo's built-in xml web views.
+   \end{itemize}
+
+   \divider
+
+   \cvevent{Data Structures and Algorithms Specialization}{UCSanDiego}{}{}
+   \begin{itemize}
+      \item Wrote and debugged low level C++ advanced assignments.
+      \item Worked on a high velocity Capstone Project that performed genome assembling. 
+      \item Briefly Touched on Streams and query point algorithms.
+      \item Reenforced my what I Learned in Accelerated Computer Science Fundamentals By The University of Illinois at Urbana-Champaign.
+   \end{itemize}
+
+   \divider
+
+   \cvevent{Google IT Automation with Python}{Google}{}{}
+   \begin{itemize}
+      \item Learned about Git (VCS) Interacting with the Operating System, Debugging and Configuration Management. 
+      \item Worked on Automating Real-World Task Capstone using Python Batteries Included Ideology.
+      \item Reenforced my what I Learned in Python 3 Programming Specialization By The University of Michigan where I built an OCR newspaper analyzer as a capstone project.
+   \end{itemize}
+   \divider
+
+   \cvevent{Developing Applications with Google Cloud}{Google}{}{}
+
+   \begin{itemize}
+      \item Understood the fundamental services and concepts of cloud computing.
+      \item Learned about various deployment strategies.
+   \end{itemize}
+
+   \divider
+
+   \cvevent{Functional Programming
+   in Scala}{École polytechnique fédérale de Lausanne (EPFL)}{}{}
+
+   \begin{itemize}
+      \item Gained a deep understanding of Scala and how it leverages the best of both worlds the Functional and the Object Oriented.
+      \item Enforced my java skills since scala is interoperable with java.
+      \item Learned about Reactivity, Parallelism and Spark.
+      \item Got comfortable with immutability, Signals, Futures and Promises.
+   \end{itemize}
+
+
+   % \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+   % \begin{itemize}
+   % \item Joined the company as employe \#20 and female employee \#1
+   % \item Developed targeted advertisement in order to use user's search queries and show them related ads
+   % \end{itemize}
+
+   % \cvsection{A Day of My Life}
+
+   % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+   % \wheelchart{outer radius}{inner radius}{
+   % comma-separated list of value/text width/color/detail}
+   % Some ad-hoc tweaking to adjust the labels so that they don't overlap
+   % \hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+   % \wheelchart{1.5cm}{0.5cm}{%
+   %    10/13em/accent!30/Sleeping \& dreaming about work,
+   %    25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+   %    5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+   %    20/11em/accent!40/Spending time with family,
+   %    5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+   %    30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+   %    5/8em/accent!20/Baking cupcakes
+   % }
+
+   \switchcolumn
+
+   \cvsection{Life Philosophy}
+   \begin{quote}
+      ``The More You Know, the Easier It Is to Learn.''
+   \end{quote}
+
+   \cvsection{Education}
+
+   \cvevent{B.S.\ in Software Engineering}{Higher Institute of Applied Sciences and Technology (HIAST)}{October 2018 -- On going...}{}
+
+   \cvsection{Proud of}
+
+   \cvachievement{\faProjectDiagram}{meScheduler}{Personal mini project on github which helped me learn at first hand about tackling a real world problem using Search Algorithms in a Typescript-React PWA utilizing Webworkers to help out with the complexity of the problem}
+
+   % \divider
+
+   % \cvachievement{\faHandPaper}{State Management with Immutability}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
+
+   \divider
+
+   \cvachievement{\faTrophy}{Best Programming and Algorithms}{OpenSumo ARC3-Syria 2017}
+
+   % \divider
+
+   % \cvachievement{\faMale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+
+   \cvsection{Strengths}
+
+   \cvtag{Hard-working (16/24)}
+   \cvtag{Persuasive}\\
+   \cvtag{Patience}
+   \cvtag{Optimism}
+
+   \divider\smallskip
+
+   \cvtag{Javascript}
+   \cvtag{React}
+   \cvtag{Vscode}
+   \cvtag{Scala}
+   \cvtag{Java}
+   \cvtag{Web Apps \& PWAs}
+
+   \cvsection{Languages}
+
+   \cvskill{English}{5}
+   % \divider
+
+   \cvskill{Arabic}{5}
+   % \divider
+
+   % \cvskill{German}{3.5} %% supports X.5 values.
+
+   % \cvsection{Notes}
+   %  Links to certificates and other details are in my Linkedin account and my Github account. 
+   % \divider
+   
+
+   % \divider
+
+   % \cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+
+   \newpage
+
+\end{paracol}
+
+\end{document}
