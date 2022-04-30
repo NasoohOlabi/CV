@@ -38,9 +38,10 @@
 \fi
 
 % Change the colours if you want to
-\definecolor{VividPurple}{HTML}{D35400}
+\definecolor{VividPurple}{HTML}{cc6900}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
+\definecolor{LightGrey}{HTML}{555555}
+\definecolor{Grey}{HTML}{ebf2f2}
 % \colorlet{name}{black}
 \colorlet{tagline}{VividPurple}
 \colorlet{heading}{VividPurple}
@@ -49,6 +50,7 @@
 \colorlet{accent}{VividPurple}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
+\pagecolor{Grey}
 
 % Change some fonts, if necessary
 % \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
@@ -87,8 +89,8 @@
    \location{Dumar, Damascus}
    % \homepage{marissamayr.tumblr.com}
    % \twitter{@marissamayer}
-   \linkedin{linkedin.com/in/nasooh-olabi/}
-   \github{github.com/NasoohOlabi/} % I'm just making this up though.
+   \linkedin{nasooh-olabi}
+   \github{NasoohOlabi} % I'm just making this up though.
    %   \orcid{0000-0000-0000-0000} % Obviously making this up too.
    %% You can add your own arbitrary detail with
    %% \printinfo{symbol}{detail}[optional hyperlink prefix]
@@ -128,7 +130,6 @@
    \begin{itemize}
       \item Learned about: Asking the right questions to solve problems, Preparing the data, Cleaning the data, Analyzing and visualizing data.
       \item Used Tableau and RStudio to better interact with the data.
-      \item Build User Friendly UI using Odoo's built-in web xml views.
    \end{itemize}
 
    \divider
@@ -137,7 +138,8 @@
    in Scala}{École polytechnique fédérale de Lausanne (EPFL)}{}{}
    
    \begin{itemize}
-      \item Gained a deep understanding of Scala and how it leverages the best of both worlds the Functional and the Object Oriented.
+      \item Learned about the effortless declarative style of functional programming for data manipulation and working with collections.
+      % \item Gained a deep understanding of Scala and how it leverages the best of both worlds the Functional and the Object Oriented.
       \item Learned about Reactivity, Parallelism and Spark.
       \item Got comfortable with immutability, Signals, Futures and Promises.
       \item Use the Apache Spark Structured Streaming API with MongoDB
@@ -156,9 +158,10 @@
    \cvevent{Developing Applications with Google Cloud}{Google}{}{}
 
    \begin{itemize}
-      \item Learned
-      \item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+      \item Understood the fundamental services and concepts of cloud computing.
+      \item Learned about various deployment strategies.
    \end{itemize}
+
 
    % \divider
 
@@ -169,22 +172,27 @@
    % \item Developed targeted advertisement in order to use user's search queries and show them related ads
    % \end{itemize}
 
-   % \cvsection{A Day of My Life}
+   \cvsection{A Day of My Life}
 
    % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-   % \wheelchart{outer radius}{inner radius}{
-   % comma-separated list of value/text width/color/detail}
+   % \wheelchart{outer radius}{inner radius}{comma-separated list of value/text width/color/detail}
    % Some ad-hoc tweaking to adjust the labels so that they don't overlap
-   % \hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-   % \wheelchart{1.5cm}{0.5cm}{%
-   %    10/13em/accent!30/Sleeping \& dreaming about work,
-   %    25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-   %    5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-   %    20/11em/accent!40/Spending time with family,
-   %    5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-   %    30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-   %    5/8em/accent!20/Baking cupcakes
-   % }
+   \hspace*{-4em}  %% quick hack to move the wheelchart a bit left
+   \wheelchart{1.5cm}{0.5cm}{
+      10/9em/accent!20/housework,
+      17/9em/accent!70/University Lectures,
+      8/9em/accent!70/Studying,
+      15/9em/accent!70/Assignments,
+      10/9em/accent!50/Commute,
+      30/9em/accent/Self-Learning
+   }
+
+      % 5/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+      % 5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+      % 5/11em/accent!40/Spending time with family,
+      % 5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+      % 5/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+      % 5/8em/accent!20/Baking cupcakes
 
    \switchcolumn
    \cvsection{Life Philosophy}
@@ -196,33 +204,31 @@
 
    \cvevent{B.S.\ in Software Engineering}{Higher Institute of Applied Sciences and Technology (HIAST)}{October 2018 -- On going...}{}
 
-   \cvsection{Most Proud of}
+   \cvsection{Proud of}
+   % \divider
 
-   \cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
+   % \cvachievement{\faHandPaper}{State Management with Immutability}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
 
-   \divider
+   % \divider
 
-   \cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
-
-   \divider
-
-   \cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
-
-   \divider
-
-   \cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+   \cvachievement{\faTrophy}{Best Programming and Algorithms}{OpenSumo ARC3-Syria 2017}
 
    \cvsection{Strengths}
 
-   \cvtag{Hard-working (18/24)}
+   \cvtag{Hard-working (16/24)}
    \cvtag{Persuasive}\\
-   \cvtag{Motivator \& Leader}
+   \cvtag{Patience}
+   \cvtag{Optimism}
 
    \divider\smallskip
 
-   \cvtag{SQL}
    \cvtag{Excel}
+   \cvtag{SQL}
    \cvtag{Python}
+   \cvtag{Vscode}
+   \cvtag{Scala}
+   \cvtag{Web Apps \& PWAs}
+
 
    \cvsection{Languages}
 
