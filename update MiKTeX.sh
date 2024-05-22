@@ -7,3 +7,9 @@ miktex --verbose fndb refresh
 initexmf --verbose --update-fndb
 initexmf --verbose --mklinks --force
 updmap
+
+# initexmf --update-fndb
+# initexmf --mkmaps  
+# initexmf --mklinks --force  
+# mpm --find-updates  
+# mpm --update  
