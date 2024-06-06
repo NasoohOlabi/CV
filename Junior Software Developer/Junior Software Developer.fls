@@ -1,4 +1,4 @@
-PWD C:\Users\nasoo\Desktop\Arkham\CV\Junior Software Developer
+PWD c:\Users\nasoo\Desktop\Arkham\CV\Junior Software Developer
 INPUT C:\Users\nasoo\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\nasoo\Desktop\Arkham\CV\Junior Software Developer\Junior Software Developer.tex
 OUTPUT Junior Software Developer.log
@@ -442,8 +442,6 @@ INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\tfm\typoland\lato\Lato-
 INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\vf\typoland\lato\Lato-Bold-T1-TLF.vf
 INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\tfm\typoland\lato\Lato-Bold-T1-TLF--base.tfm
 INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lato\a_cl4kdn.enc
-INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\vf\typoland\lato\Lato-Bold-T1-TLF.vf
-INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\tfm\typoland\lato\Lato-Bold-T1-TLF--base.tfm
 INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\fontawesome5\fa5free0.enc
 INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\vf\typoland\lato\Lato-Bold-T1-TLF.vf
 INPUT C:\Users\nasoo\AppData\Local\Programs\MiKTeX\fonts\tfm\typoland\lato\Lato-Bold-T1-TLF--base.tfm
